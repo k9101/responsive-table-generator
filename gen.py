@@ -10,18 +10,19 @@ for i in range(column):
 
 row = int(input("Enter the number of table rows: "))
 
-table = "<table class='responsive-table'>\n   <thead>\n      <tr>"
+# Build table
+table = "<table class='responsive-table'>\n  <thead>\n    <tr>"
 
 for heading in headings:
-    table += "\n         <th>" + heading + "</th>"
+    table += "\n      <th>" + heading + "</th>"
 
-table += "\n      </tr>\n   </thead>\n   <tbody>"
+table += "\n    </tr>\n  </thead>\n  <tbody>"
 
 for i in range(row):
-    table += "\n      <tr>"
+    table += "\n    <tr>"
     for heading in headings:
-        table += "\n         <td data-label='%s'></td>\n" % heading
-    table += "      </tr>"
+        table += "\n      <td data-label='%s'></td>" % heading
+    table += "\n    </tr>"
 
 table += "\n   </tbody>\n</table>"
 
