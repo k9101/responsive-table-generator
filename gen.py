@@ -20,7 +20,7 @@ table += "\n      </tr>\n   </thead>\n   <tbody>"
 for i in range(row):
     table += "\n      <tr>"
     for heading in headings:
-        table += "\n         <td data-label='%s'></td>" % heading
+        table += "\n         <td data-label='%s'></td>\n" % heading
     table += "      </tr>"
 
 table += "\n   </tbody>\n</table>"
