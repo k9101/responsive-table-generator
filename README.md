@@ -17,7 +17,7 @@ This is a simple python script to generate responsive HTML tables.
     }
   }
 </style>
-<table class='responsive-table'>
+<table class='responsive-table' style="width: 0 auto;">
    <thead>
       <tr>
          <th>First</th>
